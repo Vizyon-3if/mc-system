@@ -29,7 +29,7 @@
         <div class="container">
             <blockquote class="blockquote text-center">
                 <h2 class="display-1">Convênios médicos</h2>
-                <p class="paragrafo" style="padding-top: 3em;">Aqui no hospital Santa Cruz possuímos diversos convênios e planos de saúde, com três opções pré-estabelecidas e diversas customizações possíveis ao seu gosto e a sua preferência.</p>
+                <p class="paragrafo" style="padding-top: 3em;">Aqui no hospital Santa Cruz possuímos diversos convênios e planos de saúde, com três opções pré-estabelecidas e diversas customizações possíveis ao seu gosto e a sua preferência. Faça uma consulta e selecione o plano desejado.</p>
                 <p class="paragrafo" style="padding-bottom: 3em;">Caso queria um plano customizado nos contate <a href="<?=base_url('contato')?>"> aqui</a></p>
             </blockquote>
         </div>
@@ -81,35 +81,6 @@
     <div style="margin: auto; padding-bottom: 3em;"> 
         <img style="border-radius: 20px" src="http://minutoligado.com.br/wp-content/uploads/2016/11/Conv%C3%AAnios-M%C3%A9dicos-Tope-Seguros.png">
     </div>
-
-    <!-- Formulário de Convenios -->
-    <div class="container col-md-4 col-md-offset-4" style="padding-bottom: 3em">
-	<fieldset class="form-group">
-	<div class="row" style="padding-bottom: 1em;">
-		<legend class="col-form-label col-sm-2 pt-0">Tipo de Plano de Saúde:</legend>
-		<div class="col-sm-10">
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-			<label class="form-check-label" for="gridRadios1">
-			Individual (A partir de R$129)
-			</label>
-		</div>
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-			<label class="form-check-label" for="gridRadios2">
-			Familiar (A partir de R$129)
-			</label>
-		</div>
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-			<label class="form-check-label" for="gridRadios2">
-			Empresarial (A partir de R$129)
-			</label>
-		</div>
-	</div>
-</div>
-	<button type="submit" class="btn btn-danger">Enviar</button>
-  </div>
 
     <!-- Barra inferior do site -->
     <?php $this->load->view('commons/footer');?>

@@ -16,6 +16,7 @@
           Serviços
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="<?=base_url('cadastro_paciente')?>">Cadastro do Paciente</a>
             <a class="dropdown-item" href="<?=base_url('corpo_clinico')?>">Corpo Clínico</a>
             <a class="dropdown-item" href="<?=base_url('convenios')?>">Convênios</a>
             <a class="dropdown-item" href="<?=base_url('consultas');?>">Consultas</a>

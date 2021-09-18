@@ -73,5 +73,10 @@
             else
             return false;
         }
+
+        //controller que leva o usuário a página de consultas
+        public function cadastro_paciente() {
+            $this->load->view('cadastro_paciente');
+        }
     }
 ?>

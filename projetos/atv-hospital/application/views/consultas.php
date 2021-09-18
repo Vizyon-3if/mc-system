@@ -31,130 +31,88 @@
 <?= form_open_multipart(base_url('consultas'), array("class" => "form-horizontal", "method"=>"POST")); ?>
 <div class="container" style="padding-bottom: 3em">
 	
-	<h2>Informações do paciente</h2>
+	<h2>Informações da consulta</h2>
 	<fieldset class="form-group">
 		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="name">Nome do paciente:</label>
+			<label for="name">Código do Paciente:</label>
 			<input type="text" class="form-control" id="name" placeholder="" name="name">
 		</div>
 		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="name">Data de Nascimento:</label>
+			<label for="name">Data da Consulta:</label>
 			<input type="date" class="form-control" id="birthday" placeholder="" name="birthday">
 		</div>
-		<legend class="col-form-label col-sm-2 pt-0">Sexo:</legend>
-		<div class="form-group" style="padding-bottom: 1em;">
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					M
-				</label>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					F
-				</label>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					X
-				</label>
-			</div>
-			<div class="form-input" style="padding-bottom: 1em;">
-				<label for="rg">RG: </label>
-				<input type="text" class="form-control" id="rg" placeholder="" name="rg" maxlength="11">
-			</div>
-			<div class="form-input" style="padding-bottom: 1em;">
-				<label for="endereco">Endereço: </label>
-				<input type="text" class="form-control" id="endereco" placeholder="" name="endereco">
-			</div>
-			<div class="form-input" style="padding-bottom: 1em;">
-				<label for="cep">RG: </label>
-				<input type="text" class="form-control" id="endereco" placeholder="" name="endereco">
-			</div>
-		<legend class="col-form-label col-sm-2 pt-0">Estado Civil:</legend>
-		<div class="form-group" style="padding-bottom: 1em;">
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					Solteiro
-				</label>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					Casado
-				</label>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					Separado
-				</label>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					Divorciado
-				</label>
-			</div>
-			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-				<label class="form-check-label" for="gridRadios2">
-					Viúvo
-				</label>
-			</div>
+		<legend class="col-form-label col-sm-2 pt-0">Horário da consulta:</legend>
+	<div class="form-check">
+			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<label class="form-check-label" for="gridRadios1">
+			06:30
+			</label>
 		</div>
-		<div class="row" style="padding-bottom: 1em;">
-		<legend class="col-form-label col-sm-2 pt-0">Tipo de consulta:</legend>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<label class="form-check-label" for="gridRadios2">
+			13:30
+			</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<label class="form-check-label" for="gridRadios2">
+			16:00
+			</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<label class="form-check-label" for="gridRadios2">
+			19:00
+			</label>
+		</div>
+		<legend class="col-form-label col-sm-2 pt-0">Médicos Disponíveis:</legend>
 		<div class="col-sm-10">
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
 			<label class="form-check-label" for="gridRadios1">
 				Cardiologia
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
 			<label class="form-check-label" for="gridRadios2">
 				Oncologia
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
 			<label class="form-check-label" for="gridRadios2">
 				Neurologia
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
 			<label class="form-check-label" for="gridRadios2">
 				Geriatria
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
 			<label class="form-check-label" for="gridRadios2">
 				Pediatria
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
 			<label class="form-check-label" for="gridRadios2">
 				Ortopedia
 			</label>
 		</div>
 	</fieldset>
-	<h2>Informações para contato</h2>
-		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="email">E-mail:</label>
-			<input type="email" class="form-control" id="email" placeholder="" name="email">
-		</div>
-		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="pwd">Número de celular:</label>
-			<input type="text" class="form-control" id="celular" placeholder="Com DDD" name="celular">
-		</div>
+	<div class="form-group" style="padding-bottom: 1em;">
+			<label for="name">Diagnostico:</label>
+			<input type="text" class="form-control" id="diagnostico" placeholder="" name="diagnostico">
+	</div>
+	<div class="form-group" style="padding-bottom: 1em;">
+        <label for="pwd">Observação:</label>
+        <textarea class="form-control" id="mensagem" placeholder="Escreva aqui sua observação" name="observacao" style="height: 10em; max-height: 10em; min-height: 10em;"></textarea>
+    </div>
 		<button type="submit" class="btn btn-danger">Enviar</button>
 		</div>
 	</div>

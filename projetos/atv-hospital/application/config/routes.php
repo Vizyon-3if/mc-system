@@ -59,3 +59,4 @@ $route['corpo_clinico'] = 'institucional/corpo_clinico';
 $route['convenios'] = 'institucional/convenios';
 $route['consultas'] = 'comform/consultas';
 $route['contato'] = 'comform/contato';
+$route['cadastro_paciente'] = 'comform/cadastro_paciente';
