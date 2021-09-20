@@ -23,45 +23,42 @@
 <body class="d-flex flex-column h-100">
     <!-- Barra de topo do site -->
     <?php $this->load->view('commons/header');?>
-   
     <!-- Conteúdo de Convenios -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <blockquote class="blockquote text-center">
                 <h2 class="display-1">Convênios médicos</h2>
-                <p class="paragrafo" style="padding-top: 3em;">Aqui no hospital Santa Cruz possuímos diversos convênios e planos de saúde, com três opções pré-estabelecidas e diversas customizações possíveis ao seu gosto e a sua preferência. Faça uma consulta e selecione o plano desejado.</p>
+                <p class="paragrafo" style="padding-top: 3em;">Aqui no hospital Santa Cruz possuímos diversos convênios e planos de saúde, com três opções pré-estabelecidas e diversas customizações possíveis ao seu gosto e a sua preferência. Faça o cadastro e selecione o plano desejado.</p>
                 <p class="paragrafo" style="padding-bottom: 3em;">Caso queria um plano customizado nos contate <a href="<?=base_url('contato')?>"> aqui</a></p>
             </blockquote>
         </div>
     </div>
-
     <!-- Corpo -->
     <!-- Parte Superior -->
     <div class="containe d-flex justify-content-center">
         <div class="card blockquote text-center embed-responsive embed-responsive-16by9" style="width: 18rem;">
             <div class="card-body">
-            <h2 class="card-text" style="padding-bottom: .5;">Plano de Saúde Individual</h2>
+                <h2 class="card-text" style="padding-bottom: .5;">Plano de Saúde Individual</h2>
             </div>
         </div>
 
         <div class="card blockquote text-center embed-responsive embed-responsive-16by9" style="width: 18rem;">
             <div class="card-body">
-            <h2 class="card-text" style="padding-bottom: .5;">Plano de Saúde Familiar</h2>
+                <h2 class="card-text" style="padding-bottom: .5;">Plano de Saúde Familiar</h2>
             </div>
         </div>
 
         <div class="card blockquote text-center embed-responsive embed-responsive-16by9" style="width: 18rem;">
             <div class="card-body">
-            <h2 class="card-text" style="padding-bottom: .5;">Plano de Saúde Empresarial</h2>
+                <h2 class="card-text" style="padding-bottom: .5;">Plano de Saúde Empresarial</h2>
             </div>
         </div>
     </div>
-
     <!-- Parte Inferior -->
     <div class="containe d-flex justify-content-center">
         <div class="card blockquote text-center embed-responsive embed-responsive-16by9" style="width: 18rem;">
             <div class="card-body">
-            <p class="card-text" style="padding-bottom: .15;">A partir de R$129</p>
+                <p class="card-text" style="padding-bottom: .15;">A partir de R$129</p>
             </div>
         </div>
 
@@ -73,7 +70,7 @@
 
         <div class="card blockquote text-center embed-responsive embed-responsive-16by9" style="width: 18rem;">
             <div class="card-body">
-            <p class="card-text" style="padding-bottom: .15;">A partir de R$1.290</p>
+                <p class="card-text" style="padding-bottom: .15;">A partir de R$1.290</p>
             </div>
         </div>
     </div>

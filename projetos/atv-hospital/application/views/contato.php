@@ -45,11 +45,11 @@
     <?= form_open_multipart(base_url('contato'), array("class" => "form-horizontal", "method"=>"POST")); ?>
         <div class="form-group" style="padding-bottom: 1em;">
         <label for="email">Nome:</label>
-        <input type="text" class="form-control" id="nome" placeholder="Coloque seu nome" name="nome">
+        <input type="text" class="form-control" id="nome" placeholder="Coloque seu nome" name="nome" required>
         </div>
         <div class="form-group" style="padding-bottom: 1em;">
         <label for="email">E-mail:</label>
-        <input type="email" class="form-control" id="email" placeholder="Coloque seu e-mail" name="email">
+        <input type="email" class="form-control" id="email" placeholder="Coloque seu e-mail" name="email" required>
         </div>
         <div class="form-group" style="padding-bottom: 1em;">
         <label for="pwd">Mensagem:</label>

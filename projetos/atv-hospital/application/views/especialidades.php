@@ -21,7 +21,7 @@
 <body class="d-flex flex-column h-100">
     <!-- Barra de topo do site -->
     <?php $this->load->view('commons/header');?>
-  
+
     <!-- Conteúdo do Especialidades -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">

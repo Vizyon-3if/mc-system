@@ -35,11 +35,11 @@
 	<fieldset class="form-group">
 		<div class="form-group" style="padding-bottom: 1em;">
 			<label for="name">Nome do paciente:</label>
-			<input type="text" class="form-control" id="name" placeholder="" name="name">
+			<input type="text" class="form-control" id="name" placeholder="" name="name" maxlength="80" required>
 		</div>
 		<div class="form-group" style="padding-bottom: 1em;">
 			<label for="name">Data de Nascimento:</label>
-			<input type="date" class="form-control" id="birthday" placeholder="" name="birthday">
+			<input type="date" class="form-control" id="birthday" placeholder="" name="birthday" required>
 		</div>
 		<legend class="col-form-label col-sm-2 pt-0">Sexo:</legend>
 		<div class="form-group" style="padding-bottom: 1em;">
@@ -62,12 +62,16 @@
 				</label>
 			</div>
 			<div class="form-input" style="padding-bottom: 1em;">
-				<label for="endereco">Endereço: </label>
-				<input type="text" class="form-control" id="endereco" placeholder="" name="endereco">
+				<label for="rg">RG: </label>
+				<input type="text" class="form-control" id="rg" placeholder="" name="rg" maxlength="12">
 			</div>
 			<div class="form-input" style="padding-bottom: 1em;">
-				<label for="cep">RG: </label>
-				<input type="text" class="form-control" id="endereco" placeholder="" name="endereco">
+				<label for="endereco">Endereço: </label>
+				<input type="text" class="form-control" id="endereco" placeholder="" name="endereco" maxlength="100">
+			</div>
+			<div class="form-input" style="padding-bottom: 1em;">
+				<label for="cep">CEP: </label>
+				<input type="number" class="form-control" id="cep" placeholder="" name="cep" maxlength="16">
 			</div>
 		<legend class="col-form-label col-sm-2 pt-0">Estado Civil:</legend>
 		<div class="form-group" style="padding-bottom: 1em;">
@@ -103,7 +107,39 @@
 			</div>
 		</div>
 	</fieldset>
-    <legend class="col-form-label col-sm-2 pt-0">Tipo de convênio:</legend>
+	<legend class="col-form-label col-sm-2 pt-0">Nome do bairro:</legend>
+	<select class="form-select" aria-label="Default select example">
+		<option selected>Selecione o bairro</option>
+		<option value="1">Aviário</option>
+		<option value="2">Bom Parto</option>
+		<option value="3">Cidade Nova</option>
+		<option value="4">Novo Buritizal</option>
+		<option value="5">Cajazeiras</option>
+		<option value="6">Aldeota</option>
+		<option value="7">Asa Norte</option>
+		<option value="8">Aeroporto</option>
+		<option value="9">Setor Oeste</option>
+		<option value="10">Jardim Eldorado</option>
+		<option value="11">Sagrada Família</option>
+		<option value="12">América</option>
+		<option value="13">Coxipó da Ponte</option>
+		<option value="14">Ariramba</option>
+		<option value="15">Quadramares</option>
+		<option value="16">Cabanga</option>
+		<option value="17">Cabral</option>
+		<option value="18">Bigorrilho</option>
+		<option value="19">Ipanema</option>
+		<option value="20">Lagoa Seca</option>
+		<option value="21">Cohab</option>
+		<option value="22">Asa Branca</option>
+		<option value="23">Partenon</option>
+		<option value="24">Barra da Lagoa</option>
+		<option value="25">Aeroporto</option>
+		<option value="26">Mirandópolis</option>
+		<option value="27">Taquaralto</option>
+		<option value="28">Queens</option>
+	</select>
+    <legend class="col-form-label col-sm-2 pt-5">Tipo de convênio:</legend>
 	<div class="form-check">
 			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
 			<label class="form-check-label" for="gridRadios1">
@@ -131,11 +167,11 @@
 	<h2>Informações para contato</h2>
 		<div class="form-group" style="padding-bottom: 1em;">
 			<label for="email">E-mail:</label>
-			<input type="email" class="form-control" id="email" placeholder="" name="email">
+			<input type="email" class="form-control" id="email" placeholder="" name="email" required>
 		</div>
 		<div class="form-group" style="padding-bottom: 1em;">
 			<label for="pwd">Número de celular:</label>
-			<input type="text" class="form-control" id="celular" placeholder="Com DDD" name="celular">
+			<input type="text" class="form-control" id="celular" placeholder="Com DDD" name="celular" required>
 		</div>
 		<button type="submit" class="btn btn-danger">Enviar</button>
 		</div>

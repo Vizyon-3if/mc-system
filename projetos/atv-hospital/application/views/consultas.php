@@ -21,97 +21,96 @@
 	<blockquote class="blockquote text-center">
 		<h2 class="display-4" style="padding-bottom: .5;">Consultas</h2>
 		
-		<p class="paragrafo" style="padding-top: 3em;">Marque as suas consultas no formulário abaixo.</p>
-		<p class="paragrafo"style="padding-bottom: 3em">A comunicação sera efetuada em até 2 dias úteis.</p>
+		<p class="paragrafo" style="padding-top: 3em;">Marque as suas consultas do dia no formulário abaixo</p>
 	</blockquote>
 	</div>
 </div>
 
 <!-- Formulário de consultas -->
-<?= form_open_multipart(base_url('consultas'), array("class" => "form-horizontal", "method"=>"POST")); ?>
+<?= form_open_multipart(base_url('consultas/create'), array("class" => "form-horizontal", "method"=>"POST")); ?>
 <div class="container" style="padding-bottom: 3em">
 	
 	<h2>Informações da consulta</h2>
 	<fieldset class="form-group">
 		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="name">Código do Paciente:</label>
-			<input type="text" class="form-control" id="name" placeholder="" name="name">
+			<label for="code">Código do Paciente:</label>
+			<input type="text" class="form-control" id="code" placeholder="" name="code" required>
 		</div>
 		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="name">Data da Consulta:</label>
-			<input type="date" class="form-control" id="birthday" placeholder="" name="birthday">
+			<label for="Date">Data da Consulta:</label>
+			<input type="date" class="form-control" id="date" placeholder="" name="date" required>
 		</div>
 		<legend class="col-form-label col-sm-2 pt-0">Horário da consulta:</legend>
 	<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="06:30">
 			<label class="form-check-label" for="gridRadios1">
-			06:30
+				06:30
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
-			<label class="form-check-label" for="gridRadios2">
-			13:30
+			<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="13:30">
+			<label class="form-check-label" for="gridRadios1">
+				13:30
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
-			<label class="form-check-label" for="gridRadios2">
-			16:00
+			<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="16:00">
+			<label class="form-check-label" for="gridRadios1">
+				16:00
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
-			<label class="form-check-label" for="gridRadios2">
-			19:00
+			<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="19:00">
+			<label class="form-check-label" for="gridRadios1">
+				19:00
 			</label>
 		</div>
-		<legend class="col-form-label col-sm-2 pt-0">Médicos Disponíveis:</legend>
+		<legend class="col-form-label col-sm-3 pt-0">Consulta administrada por:</legend>
 		<div class="col-sm-10">
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
-			<label class="form-check-label" for="gridRadios1">
-				Cardiologia
+			<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="1">
+			<label class="form-check-label" for="gridRadios2">
+				Dr. Felipe Gonçalves Moura
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
+			<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="2">
 			<label class="form-check-label" for="gridRadios2">
-				Oncologia
+				Dr. Jorge Rogério Cenna Jr.
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
+			<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="3">
 			<label class="form-check-label" for="gridRadios2">
-				Neurologia
+				Dr. Rogerio Ceninha
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
+			<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="4">
 			<label class="form-check-label" for="gridRadios2">
-				Geriatria
+				Dr. João Felipe Basilio Nadu
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
+			<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="5">
 			<label class="form-check-label" for="gridRadios2">
-				Pediatria
+				Dra. Heitora Rodrigues Silva
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios3" id="gridRadios3" value="option3">
+			<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="6">
 			<label class="form-check-label" for="gridRadios2">
-				Ortopedia
+				Dr. Casa Couto Soares
 			</label>
 		</div>
 	</fieldset>
 	<div class="form-group" style="padding-bottom: 1em;">
-			<label for="name">Diagnostico:</label>
-			<input type="text" class="form-control" id="diagnostico" placeholder="" name="diagnostico">
+			<label for="Diagnose">Diagnostico:</label>
+			<input type="text" class="form-control" id="diagnostico" placeholder="" name="diagnostico" maxlength="45" required>
 	</div>
 	<div class="form-group" style="padding-bottom: 1em;">
-        <label for="pwd">Observação:</label>
-        <textarea class="form-control" id="mensagem" placeholder="Escreva aqui sua observação" name="observacao" style="height: 10em; max-height: 10em; min-height: 10em;"></textarea>
+        <label for="Observation">Observação:</label>
+        <textarea class="form-control" id="observacao" placeholder="Escreva aqui sua observação" name="observacao" style="height: 10em; max-height: 10em; min-height: 10em;"></textarea>
     </div>
 		<button type="submit" class="btn btn-danger">Enviar</button>
 		</div>
