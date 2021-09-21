@@ -29,7 +29,6 @@
             <blockquote class="blockquote text-center">
                 <h2 class="display-1">Convênios médicos</h2>
                 <p class="paragrafo" style="padding-top: 3em;">Aqui no hospital Santa Cruz possuímos diversos convênios e planos de saúde, com três opções pré-estabelecidas e diversas customizações possíveis ao seu gosto e a sua preferência. Faça o cadastro e selecione o plano desejado.</p>
-                <p class="paragrafo" style="padding-bottom: 3em;">Caso queria um plano customizado nos contate <a href="<?=base_url('contato')?>"> aqui</a></p>
             </blockquote>
         </div>
     </div>

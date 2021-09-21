@@ -17,9 +17,10 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="<?=base_url('cadastro_paciente')?>">Cadastro do Paciente</a>
-            <a class="dropdown-item" href="<?=base_url('corpo_clinico')?>">Corpo Clínico</a>
-            <a class="dropdown-item" href="<?=base_url('convenios')?>">Convênios</a>
+            <a class="dropdown-item" href="<?=base_url('exames');?>">Exames</a>
             <a class="dropdown-item" href="<?=base_url('consultas');?>">Consultas</a>
+            <a class="dropdown-item" href="<?=base_url('convenios')?>">Convênios</a>
+            <a class="dropdown-item" href="<?=base_url('corpo_clinico')?>">Corpo Clínico</a>
             <a class="dropdown-item" href="<?=base_url('especialidades')?>">Especialidades</a>
           </div>
           <li class="nav-item"><a href="<?=base_url('contato')?>" class="nav-link">Contato</a></li>

@@ -78,5 +78,9 @@
         public function cadastro_paciente() {
             $this->load->view('cadastro_paciente');
         }
+        //controller que leva o usuário a pagina de exames
+        public function exames() {
+            $this->load->view('exames');
+        }
     }
 ?>

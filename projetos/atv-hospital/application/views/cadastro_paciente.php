@@ -26,9 +26,13 @@
 	</blockquote>
 	</div>
 </div>
-
+<?php if ($this->session->flashdata('errors')) {?>
+    <div class="alert alert-danger">
+        <?php echo $this->session->flashdata('errors'); ?>
+	</div>
+<?php } ?>
 <!-- Formulário de cadastro do paciente -->
-<?= form_open_multipart(base_url('consultas'), array("class" => "form-horizontal", "method"=>"POST")); ?>
+<?= form_open_multipart(base_url('pacientes/create'), array("class" => "form-horizontal", "method"=>"POST")); ?>
 <div class="container" style="padding-bottom: 3em">
 	
 	<h2>Informações do paciente</h2>
@@ -44,19 +48,19 @@
 		<legend class="col-form-label col-sm-2 pt-0">Sexo:</legend>
 		<div class="form-group" style="padding-bottom: 1em;">
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option1">
+				<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="M">
 				<label class="form-check-label" for="gridRadios2">
 					M
 				</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option1">
+				<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="F">
 				<label class="form-check-label" for="gridRadios2">
 					F
 				</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option1">
+				<input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="X">
 				<label class="form-check-label" for="gridRadios2">
 					X
 				</label>
@@ -76,31 +80,31 @@
 		<legend class="col-form-label col-sm-2 pt-0">Estado Civil:</legend>
 		<div class="form-group" style="padding-bottom: 1em;">
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="1">
 				<label class="form-check-label" for="gridRadios2">
 					Solteiro
 				</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="2">
 				<label class="form-check-label" for="gridRadios2">
 					Casado
 				</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="3">
 				<label class="form-check-label" for="gridRadios2">
 					Separado
 				</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="4">
 				<label class="form-check-label" for="gridRadios2">
 					Divorciado
 				</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
+				<input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="5">
 				<label class="form-check-label" for="gridRadios2">
 					Viúvo
 				</label>
@@ -108,7 +112,7 @@
 		</div>
 	</fieldset>
 	<legend class="col-form-label col-sm-2 pt-0">Nome do bairro:</legend>
-	<select class="form-select" aria-label="Default select example">
+	<select class="form-select" aria-label="Default select example" id="district" name="district">
 		<option selected>Selecione o bairro</option>
 		<option value="1">Aviário</option>
 		<option value="2">Bom Parto</option>
@@ -141,38 +145,24 @@
 	</select>
     <legend class="col-form-label col-sm-2 pt-5">Tipo de convênio:</legend>
 	<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="1">
 			<label class="form-check-label" for="gridRadios1">
 			Individual (A partir de R$129)
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="2">
 			<label class="form-check-label" for="gridRadios2">
-			Familiar (A partir de R$129)
+			Familiar (A partir de R$340)
 			</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
+			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="3">
 			<label class="form-check-label" for="gridRadios2">
-			Empresarial (A partir de R$129)
+			Empresarial (A partir de R$1290)
 			</label>
 		</div>
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="gridRadios4" id="gridRadios4" value="option4">
-			<label class="form-check-label" for="gridRadios2">
-			Já tenho ou não quero um convênio
-			</label>
-		</div>
-	<h2>Informações para contato</h2>
-		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="email">E-mail:</label>
-			<input type="email" class="form-control" id="email" placeholder="" name="email" required>
-		</div>
-		<div class="form-group" style="padding-bottom: 1em;">
-			<label for="pwd">Número de celular:</label>
-			<input type="text" class="form-control" id="celular" placeholder="Com DDD" name="celular" required>
-		</div>
+		<br>
 		<button type="submit" class="btn btn-danger">Enviar</button>
 		</div>
 	</div>

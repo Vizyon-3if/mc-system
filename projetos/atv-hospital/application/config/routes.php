@@ -57,8 +57,12 @@ $route['sobre_nos'] = 'institucional/sobre_nos';
 $route['especialidades'] = 'institucional/especialidades';
 $route['corpo_clinico'] = 'institucional/corpo_clinico';
 $route['convenios'] = 'institucional/convenios';
+
 $route['consultas'] = 'comform/consultas';
 $route['contato'] = 'comform/contato';
 $route['cadastro_paciente'] = 'comform/cadastro_paciente';
+$route['exames'] = 'comform/exames';
 
 $route['consultas/create'] = 'consulta/store';
+$route['pacientes/create'] = 'paciente/store';
+$route['exames/create'] = 'exame/store';
